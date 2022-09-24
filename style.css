@@ -1,0 +1,181 @@
+body{
+    margin: 0%;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,a,button{
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width: 7rem;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: #000;
+    margin: 1rem;
+}
+
+.illustrator{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 3rem;
+}
+
+.illustratorImg img{
+    width: 40vw;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.input {
+    line-height: 2rem;
+    width: 12rem;
+    margin-bottom:0.4rem;
+}
+.input:invalid{
+    border: 2px solid red;
+}
+.button{
+    line-height: 2rem;
+    background-color: hsl(224, 93%, 58%);
+    color: white ;
+    width: 9rem;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: hsl(224, 98%, 65%)
+}
+
+.productive{
+    background-color: hsl(240, 75%, 98%);   
+}
+.productive a{
+    color: hsl(170, 45%, 43%);
+    border-bottom: 2px solid hsl(170, 45%, 43%);    
+    text-decoration: none;
+}
+
+
+.productive .qoute{
+    font-size: small;
+    background-color: white;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    max-width: 250px;
+    min-width: 180px;
+}
+.productive .qoute .ceo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.productive .qoute .ceo>div h4{
+    margin: 0%;
+    padding: 0%;
+}
+.productive .qoute img{
+    width: 1.5rem;
+    border-radius: 50%;
+}
+.upperCurve{
+    line-height: 0%;
+}
+.upperCurve img{
+    width: 100%;
+}
+
+.getStarted{
+    background-color: hsl(238, 22%, 44%);
+    flex-wrap: wrap;
+    color: #fff
+}
+.getStarted>div{
+    max-width:50vw;
+}
+.getStarted .form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+    padding-top: 5rem;
+}
+footer .contact{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+footer .icons{
+    display: flex;
+    color: white;
+}
+footer .icons i{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.2rem;
+    text-align: center;  
+    margin: 0.2rem;
+}
+footer ul{
+    margin: 0%;
+    padding: 0.2rem;
+}
+footer li{
+    list-style: none;
+    margin: 0.5rem 0px;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+footer a:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+@media screen and (max-width:385px) {
+    .welcome , .productive , .getStarted , header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .illustratorImg img{
+        width: 50vw;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+    }
+    .getStarted button{
+        width: 12rem;
+    }
+    footer , footer .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .icons{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
